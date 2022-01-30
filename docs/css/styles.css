@@ -1,0 +1,220 @@
+body {
+  font-family: 'Roboto', serif;
+}
+
+.avatar > img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.name > h3 {
+  margin-bottom: 0.2rem;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
+
+.name > h5 {
+  font-size: .7rem;
+  margin: 0;
+  color: #a1a1a1;
+  text-transform: uppercase;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  padding: 6px 16px;
+  -webkit-box-flex: 1;
+  flex-grow: 1;
+}
+.timeline li {
+  list-style: none;
+  display: flex;
+  position: relative;
+  min-height: 70px;
+}
+
+.tl-separator {
+  display: flex;
+  flex-direction: column;
+  flex: 0 1 0%;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.tl-line {
+  width: 2px;
+  background-color: rgb(189, 189, 189);
+  -webkit-box-flex: 1;
+  flex-grow: 1;
+}
+
+.tl-point {
+  display: flex;
+  align-self: baseline;
+  border-style: solid;
+  border-width: 2px;
+  padding: 4px;
+  border-radius: 50%;
+  box-shadow: rgb(0 0 0 / 20%) 0px 2px 1px -1px, rgb(0 0 0 / 14%) 0px 1px 1px 0px, rgb(0 0 0 / 12%) 0px 1px 3px 0px;
+  margin: 11.5px 0px;
+  border-color: transparent;
+  color: rgb(250, 250, 250);
+  background-color: rgb(189, 189, 189);
+}
+
+.tl-content {
+  margin: 0px;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+  letter-spacing: 0.00938em;
+  flex: 1 1 0%;
+  text-align: left;
+  padding: 12px 16px;
+}
+.tl-content > a {
+  color: #212529;
+  text-decoration: none;
+}
+.tl-content > span {
+  margin: 0px;
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 1.6;
+  letter-spacing: 0.0075em;
+}
+.tl-content > p {
+  margin: 0px;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.2;
+  letter-spacing: 0.00938em;
+}
+
+.bc-transparent {
+  background-color: transparent !important;
+}
+
+.institution {
+  font-size: .9rem;
+  color: #777;
+}
+
+.subtitle {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #212529;
+}
+
+.skill {
+  padding-left: 0.2rem;
+}
+.skill > span {
+  margin-left: 0.3rem;
+  color: #555;
+}
+
+.skill-topic {
+  color: #555;
+  font-family: 'Dancing Script', serif;
+  border-bottom: 1px dashed #ccc;
+  padding-bottom: 0.25rem;
+  font-size: 1.2rem;
+}
+
+.social {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.social a {
+  color: inherit;
+}
+.social a:hover {
+  text-shadow: 4px 4px 4px #aaa;
+}
+
+.bi-facebook {
+  color: #0B84EE;
+}
+
+.bi-linkedin {
+  color: #0A66C2;
+}
+
+.bi-twitter {
+  color: #1A8CD8;
+}
+
+.experience > p {
+  color: #777;
+}
+
+.career > h6 {
+  text-shadow: 0px 0px 0.1px #111;
+}
+
+@media (min-width: 768px) {
+  #background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 370px;
+    background-color: black;
+    z-index: -1;
+  }
+
+  .avatar {
+    order: 1;
+    width: 100%;
+  }
+  .avatar > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+  }
+
+  .name > h3 {
+    margin-bottom: 0;
+    font-size: 1.2rem;
+    color: #fff;
+    font-weight: bold;
+    line-height: 1;
+  }
+  .name > h3 span {
+    font-size: 2rem;
+    display: block;
+  }
+  .name > h5 {
+    font-size: .6rem;
+    color: #fff;
+    font-weight: bold;
+  }
+
+  .subtitle-white, .tl-content {
+    color: #fff;
+  }
+
+  .tl-line, .tl-point {
+    color: #fff;
+    background-color: #fff;
+  }
+
+  .custom-column {
+    margin-top: -2rem;
+  }
+}
+
+@media (min-width: 992px) {
+  #background {
+    height: 420px;
+  }
+
+  .avatar > img {
+    width: 400px;
+    height: 400px;
+  }
+}
