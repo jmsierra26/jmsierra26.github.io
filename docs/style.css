@@ -289,4 +289,14 @@ footer {
     .exp-header h3 {
         font-size: 1.1rem;
     }
+
+    .header-text h1 {
+        font-size: 1.8rem; /* Ajusta este valor según prefieras (originalmente era 2.8rem) */
+        line-height: 1.2;
+        margin-bottom: 10px;
+    }
+    
+    .title {
+        font-size: 1.2rem; /* También bajamos un poco el cargo para mantener la proporción */
+    }
 }
