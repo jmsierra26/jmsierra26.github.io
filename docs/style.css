@@ -1,0 +1,292 @@
+/* --- Variables de Color Actualizadas (Azul Ejecutivo Tech) --- */
+:root {
+    --bg-color: #fdfdfd;
+    --text-color: #333;
+    --heading-color: #1a3a5f; /* Azul Marino Profundo para máxima jerarquía */
+    --accent-color: #2c5f9e;  /* Azul Ejecutivo vibrante y profesional */
+    --accent-color-dark: #1e4373; /* Tono más oscuro para contrastes y hovers */
+    --card-bg: #fff;
+    --border-color: #e0e6ed;
+    --shadow: 0 4px 12px rgba(44, 95, 158, 0.08); /* Sombra con un toque sutil de azul */
+    --transition: all 0.3s ease;
+    --header-bg: #ffffff;
+}
+
+/* --- Dark Mode Variables (Azul Cobalto) --- */
+body.dark-mode {
+    --bg-color: #0f172a; /* Azul Oxford casi negro */
+    --text-color: #f1f5f9;
+    --heading-color: #38bdf8; /* Azul Cielo para resaltar en oscuridad */
+    --accent-color: #38bdf8;
+    --card-bg: #1e293b;
+    --border-color: #334155;
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    --header-bg: #1e293b;
+}
+
+/* Tip adicional: Para que el azul destaque más en los iconos */
+i {
+    margin-right: 8px;
+    color: var(--accent-color);
+    font-size: 1.1rem; /* Un toque más grandes para que se noten */
+}
+
+.skill-tag {
+    background-color: var(--accent-color);
+    /* ... resto del código igual ... */
+}
+
+/* --- Resets y Base --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Sans-serif limpia */
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    transition: var(--transition);
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1, h2, h3, h4 {
+    color: var(--heading-color);
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: var(--transition);
+}
+
+ul {
+    list-style: none;
+}
+
+i {
+    margin-right: 8px;
+    color: var(--accent-color);
+}
+
+/* --- Header --- */
+header {
+    background-color: var(--header-bg);
+    border-bottom: 3px solid var(--accent-color);
+    padding: 40px 0;
+    box-shadow: var(--shadow);
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid var(--accent-color);
+}
+
+.header-text h1 {
+    font-size: 2.8rem;
+    margin-bottom: 5px;
+}
+
+.title {
+    font-size: 1.5rem;
+    color: var(--accent-color);
+    font-weight: 500;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    color: var(--text-color);
+    margin-bottom: 15px;
+    font-weight: 300;
+}
+
+.contact-header {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.contact-header a:hover {
+    color: var(--accent-color);
+}
+
+/* --- Main Content --- */
+main {
+    padding: 40px 0;
+}
+
+section {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.main-content {
+    display: flex;
+    gap: 40px;
+}
+
+.left-column {
+    flex: 2;
+}
+
+.right-column {
+    flex: 1;
+}
+
+/* --- Experience --- */
+.experience-item {
+    background: var(--card-bg);
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border: 1px solid var(--border-color);
+    transition: var(--transition);
+}
+
+.experience-item:hover {
+    box-shadow: var(--shadow);
+}
+
+.exp-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 5px;
+}
+
+.exp-header h3 {
+    font-size: 1.3rem;
+}
+
+.exp-header h3 i {
+    font-size: 1rem;
+    color: var(--accent-color);
+}
+
+.date {
+    font-size: 0.9rem;
+    color: var(--accent-color);
+}
+
+.company {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.experience-item ul {
+    list-style: circle;
+    margin-left: 20px;
+    font-size: 0.95rem;
+}
+
+.experience-item li {
+    margin-bottom: 5px;
+}
+
+/* --- Skills --- */
+.skills-category {
+    margin-bottom: 25px;
+}
+
+.skills-category h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.skill-tag {
+    display: inline-block;
+    background-color: var(--accent-color);
+    color: #fff;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    margin: 3px;
+    transition: var(--transition);
+}
+
+.skill-tag:hover {
+    background-color: var(--accent-color-dark);
+}
+
+/* --- Education & Certs --- */
+.edu-item, .cert-item {
+    background: var(--card-bg);
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    border: 1px solid var(--border-color);
+}
+
+/* --- Footer --- */
+footer {
+    border-top: 2px solid var(--accent-color);
+    padding: 20px 0;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-theme {
+    background: none;
+    border: none;
+    color: var(--text-color);
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.btn-theme:hover {
+    color: var(--accent-color);
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .main-content {
+        flex-direction: column;
+    }
+
+    .exp-header {
+        flex-direction: column;
+    }
+
+    .exp-header h3 {
+        font-size: 1.1rem;
+    }
+}
